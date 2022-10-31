@@ -1,4 +1,0 @@
-codeschooluz
-python
-ML
-Numpy
