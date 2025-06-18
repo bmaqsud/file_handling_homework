@@ -8,3 +8,17 @@ def main(data:str):
     """
     
 # Read data from file
+     
+    total=0
+    for i in data:
+        if i in '123456789':
+            total += int(i)
+
+    return total
+
+
+with open('txt_file/data07.txt', 'r') as file :
+    data_sum=file.read()
+
+result=main(data_sum)
+print(result)

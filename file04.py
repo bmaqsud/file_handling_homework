@@ -8,3 +8,15 @@ def main(data:str):
     """
     
 # Read data from file
+    chars=[]
+    for w in data:
+        if w not in '0123456789':
+           chars.append(w)
+    return chars
+
+
+with open('txt_file/data04.txt', 'r') as file:
+    string=file.read()
+
+result=main(string)
+print(result)

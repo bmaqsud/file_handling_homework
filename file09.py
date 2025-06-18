@@ -8,3 +8,14 @@ def main(data:str):
     """
 
 # Read data from file
+    nums=[]
+    for i in data:
+        if i in '0123456789':
+            nums.append(int(i))
+    return min(nums)
+
+with open('txt_file/data09.txt', 'r') as file:
+     min_num=file.read()
+
+result=main(min_num)
+print(result)
